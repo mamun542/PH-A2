@@ -276,3 +276,87 @@ nav {
     transition: transform 0.3s ease;
     cursor: pointer;
 }
+
+
+.features {
+    padding: 80px 0;
+    background-color: #230E3D;
+
+}
+
+.features-title {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 60px;
+    font-weight: 800;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+
+.feature-card.tall {
+    grid-column: span 4;
+    grid-row: span 2;
+    height: 480px;
+    justify-content: center;
+}
+
+.feature-card:nth-child(2),
+.feature-card:nth-child(3) {
+    grid-column: span 8;
+    height: 225px;
+}
+
+.feature-card.wide {
+    grid-column: span 8;
+    grid-row: 3;
+    height: 273px;
+}
+
+.feature-card:nth-child(5) {
+    grid-column: span 4;
+    grid-row: 3;
+    height: 273px;
+}
+
+.card-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 24px;
+    object-fit: contain;
+}
+
+.feature-card h3 {
+    color: #FFFFFF;
+    font-size: 24px;
+    margin-bottom: 16px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.feature-card p {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 1.6;
+    opacity: 0.7;
+    margin: 0;
+}
